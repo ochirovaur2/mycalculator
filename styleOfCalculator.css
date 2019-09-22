@@ -26,7 +26,7 @@ body{
 	background-color: #4B4A45;
 	
 	padding: 15px;
-	border-radius: 10px;
+	
 	border: 6px solid #232323;
 	
 }
@@ -61,7 +61,10 @@ table{
 	cursor: pointer;
 	text-align: center;
 }
-#view{
+#view{	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
 	text-align: center;
 	color: white;
 	width: 240px;
@@ -81,6 +84,10 @@ a:hover{
 	cursor: pointer;
 }
 #textwiew{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
 	width: 254px;
 	margin: 5px;
 	font-size: 350%;
