@@ -1,0 +1,95 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+
+}
+
+.sq{
+	
+	
+	background: rgb(244,244,244);
+    background: linear-gradient(0deg, rgba(244,244,244,1) 0%, rgba(88,83,71,1) 100%);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+body{
+
+	
+}
+#main{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	background-color: #4B4A45;
+	
+	padding: 15px;
+	border-radius: 10px;
+	border: 6px solid #232323;
+	
+}
+
+table{
+
+}
+
+.button{
+	text-align: center;
+	width: 60px;
+	height: 60px;
+	margin:2px;
+	
+	font-size: 35px;
+	color: white;
+	background-color: #332e2e;
+	border: 1px solid black;
+	transition: 0.8s;
+}
+#zero {
+	width: 127px;
+	
+}
+#eqal{
+	height: 126px;
+	
+}
+.button:hover{
+	background-color: white;
+	color: #332e2e;
+	cursor: pointer;
+	text-align: center;
+}
+#view{
+	text-align: center;
+	color: white;
+	width: 240px;
+	height: 48px;
+	background-color: #5D7D83;
+	margin: 5px 13px;
+
+}
+
+a{	
+	font-size: 35px;
+	color: white;
+	text-decoration: none;
+}
+
+a:hover{
+	cursor: pointer;
+}
+#textwiew{
+	width: 254px;
+	margin: 5px;
+	font-size: 350%;
+	text-align: right;
+	color: black;  
+  	
+}
+div{
+	position: relative;
+
+}
+
