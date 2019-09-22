@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Calculator</title>
+	<link rel="stylesheet" type="text/css" href="styleOfCalculator.css">
+</head>
+<body>
+	<div class="sq"></div>
+	<div id="main">
+		<form name="form">
+			
+			<input id="textwiew" name="textwiew" disabled>
+		</form>
+		
+		<table>
+			<tr>
+				<td><input type="button" class="button" value="C" name="" id="clear"></td>
+				<td><input type="button" class="button" value="<" name="" id="deleteOneNumber"></td>
+				
+				<td><input type="button" class="button" value="/" name="" id="divide"></td>
+				<td><input type="button" class="button" value="X" name="" id="multiplication"></td>
+			</tr>
+			<tr>
+				<td><input type="button" class="button" value="7" name="" id="seven"></td>
+				<td><input type="button" class="button" value="8" name="" id="eight"></td>
+				<td><input type="button" class="button" value="9" name="" id="nine"></td>
+				<td ><input type="button" class="button" value="-" name="" id="subtraction"></td>
+			</tr>
+			<tr>
+				<td><input type="button" class="button" value="4" name="" id="four"></td>
+				<td><input type="button" class="button" value="5" name="" id="five"></td>
+				<td><input type="button" class="button" value="6" name="" id="six"></td>
+				<td><input type="button" class="button" value="+" name="" id="plus"></td>
+			</tr>
+			<tr>
+				<td><input type="button" class="button" value="1" name="" id="one" ></td>
+				<td><input type="button" class="button" value="2" name="" id="two"></td>
+				<td><input type="button" class="button" value="3" name="" id="three"></td>
+				<td rowspan="2"><input type="button" class="button" value="=" name="" id="eqal"></td>
+			</tr>
+			
+			<tr>
+				<td colspan="2"><input type="button" class="button" value="0" name="" id="zero"></td>
+				
+				<td><input type="button" class="button" value="," name="" id="comma"></td>
+				
+			</tr>
+		</table>
+			<div id="view">
+		<a href="https://github.com/ochirovaur2/calculator-github.io/blob/master/index.html">View code</a>
+			</div>
+
+	
+		
+	</div>
+
+		
+	
+	<script type="text/javascript">
+		var number = "";
+		
+
+		document.getElementById("one").onclick = function() {
+			number = number + 1;
+			document.getElementById("textwiew").value = number;
+			
+		}
+
+		document.getElementById("two").onclick = function() {
+			number = number + 2;
+			document.getElementById("textwiew").value = number;
+		}
+
+		document.getElementById("three").onclick = function() {
+			number = number + 3;
+			document.getElementById("textwiew").value = number;
+		}
+
+		document.getElementById("four").onclick = function() {
+			number = number + 4;
+			document.getElementById("textwiew").value = number;
+		}
+		document.getElementById("five").onclick = function() {
+			number = number + 5;
+			document.getElementById("textwiew").value = number;
+		}
+		document.getElementById("six").onclick = function() {
+			number = number + 6;
+			document.getElementById("textwiew").value = number;
+		}
+		document.getElementById("seven").onclick = function() {
+			number = number + 7;
+			document.getElementById("textwiew").value = number;
+		}
+		document.getElementById("eight").onclick = function() {
+			number = number + 8;
+			document.getElementById("textwiew").value = number;
+		}
+		document.getElementById("nine").onclick = function() {
+			number = number + 9;
+			document.getElementById("textwiew").value = number;
+		}
+
+		document.getElementById("zero").onclick = function() {
+			number = number + 0;
+			document.getElementById("textwiew").value = number;
+		}
+		document.getElementById("comma").onclick = function() {
+			document.getElementById("textwiew").value = document.getElementById("textwiew").value + ".";
+			number = number + ".";
+			
+		}
+
+		document.getElementById("eqal").onclick = function() {
+			if(number) {
+			document.getElementById("textwiew").value = eval(number);
+			number = eval(number);
+			}
+		}
+		/*plus*/
+		document.getElementById("plus").onclick = function() {
+			if(number) {
+				number = number + "+";
+				document.getElementById("textwiew").value = number;
+			}
+
+		}
+
+		document.getElementById("subtraction").onclick = function() {
+			if(number) {
+				number = number + "-";
+				document.getElementById("textwiew").value = number;
+			}
+			
+		}
+		document.getElementById("clear").onclick = function() {
+			number = "";
+			document.getElementById("textwiew").value = number;
+		
+		}
+		document.getElementById("deleteOneNumber").onclick = function() {
+			number = number.substring(0,number.length - 1)
+			document.getElementById("textwiew").value = document.getElementById("textwiew").value.substring(0,document.getElementById("textwiew").value.length - 1);
+		}
+
+		document.getElementById("multiplication").onclick = function() {
+			if(number) {
+				document.getElementById("textwiew").value = number + "x";
+				number = number + "*";
+			}
+			
+		}
+		document.getElementById("divide").onclick = function() {
+			if(number) {
+				number = number + "/";
+				document.getElementById("textwiew").value =number;
+			}
+		}
+
+		
+
+		
+	</script>
+</body>
+</html>
